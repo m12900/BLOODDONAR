@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_signup"
+    tools:context=".BloodConfirmActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLOOD DONAR"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+            <RadioButton
+            android:id="@+id/A_post_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="A+"/>
+        <RadioButton android:id="@+id/A_neg_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="A-"/>
+        <RadioButton
+            android:id="@+id/B_post_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="B+"/>
+        <RadioButton android:id="@+id/B_neg_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="B-"/>
+        <RadioButton
+            android:id="@+id/AB_post_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB+"
+            android:textSize="35dp"/>
+        <RadioButton android:id="@+id/Ab_neg_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB-"
+            android:textSize="35dp"/>
+        <RadioButton
+            android:id="@+id/O_post_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O+"
+            android:textSize="35dp"/>
+        <RadioButton android:id="@+id/O_neg_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O-"
+            android:textSize="35dp"/>
+        </GridLayout>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_ver_code_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#FF0000"
+        android:text="Next"
+        android:textSize="30dp"/>
+</RelativeLayout>
